@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #19355e;
+    height: 100px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 65px;
+}
+
+.carrinho {
+    display: flex;
+    width: 90px;
+    height: 45px;
+    margin-right: 88px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    align-self: center;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 117px;
+    width: 70%;
+}
+
+.product {
+    display: flex;
+    width: 217px;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.51);
+}
+
+.product p {
+    display: flex;
+    width: 217px;
+    padding: 5px;
+}
+
+.product img {
+    display: flex;
+    align-self: center;
+    margin: 16px 0px 14px 0px;
+    width: 111px;
+    height: 138px;
+}
+
+.product h3 {
+    width: 122px;
+
+}
+
+.infor-price {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+
+
+.infor-price a {
+
+    background: #373737;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 18px;
+    height: 31px;
+    background-color: #19355e;
+    border-radius: 0px 0px 8px 8px;
+    color: #fff;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #0979e1;
+}
+
+.product button:active {
+    opacity: 0.7;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 172px;
+    height: 75px;
+    color: white;
+    background-color: #19355e;
+}
+
+.footer-social {
+    display: flex;
+    font-size: 25px;
+    gap: 1rem;
+
+}
+
+.footer-social a {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    /* color: #0979e1; */
+
+}
