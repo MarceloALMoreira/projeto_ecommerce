@@ -1,15 +1,11 @@
 
-
-let produto = document.querySelector('.product')
-
-let imagem = produto.querySelector('img').getAttribute('src')
-
+/*                          Mapeando elementos
+-----------------------------------------------
+*/
+const produto = document.querySelector('.product')
+const imagem = produto.querySelector('img').getAttribute('src')
 const buttons = document.querySelectorAll('button')
-
-// seleciona o elemento do carrinho pelo ID
 const cartCounter = document.querySelector('#cart-counter');
-
-
 
 
 let cartItems = []
@@ -35,11 +31,12 @@ buttons.forEach((button) => {
 })
 
 
+
+
+
 const closeSidebarButton = document.querySelector('.close-sidebar');
 const sidebarOverlay = document.querySelector('.sidebar-overlay');
 const sidebar = document.querySelector('.sidebar');
-
-onmousemove = "openSidebarButton()"
 
 const openSidebarButton = () => {
     sidebar.classList.add('open');
@@ -57,3 +54,30 @@ const openSidebarButton = () => {
 }
 
 
+
+
+
+
+
+
+
+
+// Buttons Sidebar add itens
+
+
+const quantityInput = document.querySelector('#quantity');
+const incrementButton = document.querySelector('#increment');
+const decrementButton = document.querySelector('#decrement');
+
+
+incrementButton.addEventListener('click', () => {
+    quantityInput.value++;
+    quantityInput.blur();
+});
+
+decrementButton.addEventListener('click', () => {
+    if (quantityInput.value > 0) {
+        quantityInput.value--;
+    }
+    quantityInput.blur();
+});

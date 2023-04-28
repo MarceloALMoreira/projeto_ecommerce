@@ -13,6 +13,7 @@
 
 <body>
 
+    <!-- Header Principal -->
     <header class="header-container">
         <div class="logo">
             <h2>SACHA DUBO</h2>
@@ -20,7 +21,7 @@
         </div>
 
         <div class="carrinho">
-            <img src="../assets/shop.svg" alt="" onmousemove="openSidebarButton()">
+            <img src="../assets/shop.svg" alt="carrinho" onclick="openSidebarButton()">
             <div class="contador">
                 <p id="cart-counter">0</p>
             </div>
@@ -29,18 +30,48 @@
 
     <!-- Siber Bar -->
     <div class="sidebar">
+        <div class="sidebar-title">
+            <h2>Carrinho de compras</h2>
+        </div>
+        <div class="sidebar-itens">
+
+            <div>
+                <img src="../assets/apple-watch.svg" alt="itens">
+            </div>
+
+            <div>
+                <p> Apple Watch Series 4 GPS</p>
+            </div>
+            <div>
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <input type="number" min="1" value="1" max="5" id="">
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div>
+                R$399
+            </div>
+        </div>
         <a href="#" class="close-sidebar">
             <ion-icon name="close-outline"></ion-icon>
         </a>
+    </div>
 
+    <!-- Oculta sibebar -->
+    <div class="sidebar-overlay">
 
     </div>
 
-    <div class="sidebar-overlay"></div>
+    <!-- Filtro de Buscar de Produtos -->
 
+    <!-- <section class="filter">
+        <div class="search">
+            Buscar Produtos
+        </div>
+    </section> -->
 
-
-
+    <!-- Main Conteúdos -->
     <main class="container">
         <section class="product-container">
 
@@ -74,6 +105,7 @@
                 <button>Comprar</button>
 
             </div>
+
             <div class="product">
                 <img src="../assets/beats-headphones.svg" alt="">
                 <div class="infor-price">
@@ -83,6 +115,7 @@
                 <p>Redesigned from scratch and completely revised.</p>
                 <button>Comprar</button>
             </div>
+
             <div class="product">
                 <img src="../assets/macbook-pro.svg" alt="">
                 <div class="infor-price">
@@ -92,6 +125,7 @@
                 <p>Redesigned from scratch and completely revised.</p>
                 <button>Comprar</button>
             </div>
+
             <div class="product">
                 <img src="../assets/ipad-pro.svg" alt="">
                 <div class="infor-price">
@@ -101,6 +135,7 @@
                 <p>Redesigned from scratch and completely revised.</p>
                 <button>Comprar</button>
             </div>
+
             <div class="product">
                 <img src="../assets/homepod.svg" alt="">
                 <div class="infor-price">
@@ -110,6 +145,7 @@
                 <p>Redesigned from scratch and completely revised.</p>
                 <button>Comprar</button>
             </div>
+
             <div class="product">
                 <img src="../assets/jlab-audio-wireless.svg" alt="">
                 <div class="infor-price">
@@ -119,9 +155,14 @@
                 <p>Redesigned from scratch and completely revised.</p>
                 <button>Comprar</button>
             </div>
+
+            <!-- <div>
+                Contador de Paginas
+            </div> -->
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
 
         <div class="footer-infor">
@@ -130,6 +171,7 @@
                 © Todos os direitos reservados
             </p>
         </div>
+
         <div class="footer-social">
             <a href="">
                 <ion-icon name="logo-facebook"></ion-icon>
@@ -140,7 +182,9 @@
             <a href="">
                 <ion-icon name="logo-youtube"></ion-icon>
             </a>
+
         </div>
+
     </footer>
 
 
